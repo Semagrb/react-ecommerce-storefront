@@ -10,7 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root">
+      <!-- Fallback content while React loads -->
+      <div style="padding: 20px; font-family: Arial, sans-serif;">
+        <h1 style="color: #2563eb;">🛍️ Loading React E-Commerce Storefront...</h1>
+        <p>If you see this message for more than a few seconds, there might be a loading issue.</p>
+        <div style="background: #f3f4f6; padding: 15px; border-radius: 5px; margin-top: 20px;">
+          <strong>Troubleshooting:</strong>
+          <ul>
+            <li>Check browser console (F12) for errors</li>
+            <li>Make sure development server is running</li>
+            <li>Try refreshing the page</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
